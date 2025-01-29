@@ -2,7 +2,7 @@
 
 ## Starter app
 
-Car data consist of brand, model, year and price. Basic CRUD operations. Main page displays form to add cars, display inventory and delete cars. No persistent data for now. MVP.
+Car data consist of brand, model, year and price. Basic CRUD operations. Main page displays form to add cars, display inventory and delete cars. No persistent data for now. MVP. Relational database added on branch `sqlite-db`.
 
 Under development ...
 !["Basic CRUD app](assets/Basic-CRUD.png "Basic CRUD app")
