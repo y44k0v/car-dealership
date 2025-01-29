@@ -71,3 +71,21 @@ npm run dev
   ➜  press h + enter to show help
 
 ```
+
+### Containers
+
+```BASH
+# Backend
+cd backend
+docker build -t car-dealership-backend .
+docker run -p 5000:5000 car-dealership-backend
+# Frontend
+cd frontend
+docker build -t car-dealership-frontend .
+docker run -it -p 5173:5173 -d car-dealership-frontend
+
+# Running both at the same time 
+docker-compose up --build
+```
+
+The app will be available at `http://localhost:5173`.
