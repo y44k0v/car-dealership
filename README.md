@@ -2,7 +2,9 @@
 
 ### Starter app
 
-Car data consist of brand, model, year and price. Basic CRUD operations. Main page displays form to add cars, display inventory and delete cars. No persistent data. MVP. Work on progress.
+Car data consist of brand, model, year and price. Basic CRUD operations. Main page displays form to add cars, display inventory and delete cars. No persistent data. MVP. 
+
+Under development ...
 
 ### Backend
 
