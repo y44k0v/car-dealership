@@ -1,10 +1,11 @@
 # Full-stack TypeScript Car Dealership app
 
-### Starter app
+## Starter app
 
 Car data consist of brand, model, year and price. Basic CRUD operations. Main page displays form to add cars, display inventory and delete cars. No persistent data for now. MVP.
 
 Under development ...
+!["Basic CRUD app](assets/Basic-CRUD.png "Basic CRUD app")
 
 ### Backend
 
@@ -43,6 +44,7 @@ Server running on http://localhost:5000
 ### Frontend
 
 Vite framework (React/TS)
+
 ```BASH
 npm create vite@latest
 # named frontend
