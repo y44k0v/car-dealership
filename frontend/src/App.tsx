@@ -13,7 +13,7 @@ function App() {
     <div>
       <h1>Car Dealership</h1>
       <AddCar onCarAdded={handleCarAdded} />
-      <CarList />
+      <CarList refresh={refresh} />
     </div>
   );
 }

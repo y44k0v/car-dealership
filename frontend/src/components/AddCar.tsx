@@ -20,30 +20,42 @@ const AddCar = ({ onCarAdded }: { onCarAdded: () => void }) => {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Add a New Car</h2>
+      <div className="form-group">
+      <label htmlFor="brand">Brand:  </label>
       <input
         type="text"
-        placeholder="Brand"
+        placeholder=" Honda"
         value={car.brand}
         onChange={(e) => setCar({ ...car, brand: e.target.value })}
       />
+      </div>
+      <div className="form-group">
+      <label htmlFor="model">Model: </label>
       <input
         type="text"
-        placeholder="Model"
+        placeholder=" Civic"
         value={car.model}
         onChange={(e) => setCar({ ...car, model: e.target.value })}
       />
+      </div>
+      <div className="form-group">
+      <label htmlFor="year">Year:     </label>
       <input
         type="number"
-        placeholder="Year"
-        value={car.year}
+        placeholder="2025"
+        value={car.year !== 0 ? car.year : 2025}
         onChange={(e) => setCar({ ...car, year: +e.target.value })}
       />
+      </div>
+      <div className="form-group">
+      <label htmlFor="price">Price:    </label>
       <input
         type="number"
-        placeholder="Price"
-        value={car.price}
+        placeholder="3500.99"
+        value={car.price !== 0 ? car.price : 35000.55}
         onChange={(e) => setCar({ ...car, price: +e.target.value })}
       />
+      </div>
       <button type="submit">Add Car</button>
     </form>
   );

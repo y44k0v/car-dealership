@@ -33,6 +33,44 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  align-content: center;
+}
+
+/* label {
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 10px;;
+} */
+
+/* input {
+  display: block;
+  margin-bottom: 10px; 
+} */
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 100px; /* Adjust label width */
+  text-align: right;
+  margin-right: 10px;
+}
+
+.form-group input {
+  flex: 1; /* Makes input take up remaining space */
+  padding: 5px;
+}
+
+li {
+  width: 100%;
+}
+
+.btn-update {
+  margin-left: 5px;
+  align-items: end;
 }
 
 button {
@@ -45,6 +83,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 105px;
 }
 button:hover {
   border-color: #646cff;
