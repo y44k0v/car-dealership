@@ -82,7 +82,7 @@ npm run dev
 # Backend
 cd backend
 docker build -t car-dealership-backend:v0.0.1 .
-docker run -p 5000:5000 car-dealership-backend:v0.0.1
+docker run -it -p 5000:5000 -d car-dealership-backend:v0.0.1
 # Frontend
 cd frontend
 docker build -t car-dealership-frontend:v0.0.1 .
@@ -93,3 +93,15 @@ docker-compose up --build
 ```
 
 The app will be available at `http://localhost:5173`.
+
+### Relational Database
+
+Branch `sqlite-db` contains the modifcations to include a file based relational database.
+
+```BASH
+cd backend
+mkdir -p src/database
+npm install sqlite3
+npm install --save-dev @types/sqlite3
+
+```
