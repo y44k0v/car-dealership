@@ -79,12 +79,12 @@ npm run dev
 ```BASH
 # Backend
 cd backend
-docker build -t car-dealership-backend .
-docker run -p 5000:5000 car-dealership-backend
+docker build -t car-dealership-backend:v0.0.1 .
+docker run -p 5000:5000 car-dealership-backend:v0.0.1
 # Frontend
 cd frontend
-docker build -t car-dealership-frontend .
-docker run -it -p 5173:5173 -d car-dealership-frontend
+docker build -t car-dealership-frontend:v0.0.1 .
+docker run -it -p 5173:5173 -d car-dealership-frontend:v0.0.1
 
 # Running both at the same time 
 docker-compose up --build
